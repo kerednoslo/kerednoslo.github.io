@@ -6,11 +6,12 @@ author_profile: true
 ---
 
 {% include base_path %}
+
 Peer Reviewed Journal articles
 ======
 {% bibliography --file mypapers %}
 
-Conference papers
+
 
 
 {% if author.googlescholar %}
