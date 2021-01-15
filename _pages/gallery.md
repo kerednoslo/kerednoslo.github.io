@@ -17,8 +17,12 @@ $$\nabla^2 p +k^2p - 0$$,
 
 and the passive and active sonar equations respectively,
 
-$$SNR = SL - TL - NL$$
+$$
+SNR = SL - TL - NL
+$$
 
-$$SNR = SL - 2TL + TS - NL$$.
+$$
+SNR = SL - 2TL + TS - NL
+$$.
 
 Lindsay also happens to be my mom, and it was fun working together.
