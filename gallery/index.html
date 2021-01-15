@@ -89,6 +89,13 @@
 <link rel="stylesheet" href="https://kerednoslo.github.io/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+<!-- For KaTeX support (instead of MathJax) -->
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
     
 
 <!-- start custom head snippets -->
@@ -256,7 +263,10 @@
       <h1 class="page__title">Gallery</h1>
     
     
-<p>Fun and interesting images in acoustics</p>
+<h1 id="fun-and-interesting-images-in-acoustics">Fun and interesting images in acoustics</h1>
+<p>Here you will (future tense here, not command form) find some fun images from my research.</p>
+
+<p>While you&#8217;re waiting for my own images, you can checkout art by <a href="https://www.lindsayolsonart.com">Lindsay Olson</a>. I&#8217;ve been lucky to work with her on a project about sound in the ocean. She went on a cruise with <a href="https://ccom.unh.edu/user/jmiksisolds">Dr. Jennifer Miksis-Olds</a> for the <a href="https://adeon.unh.edu">ADEON project</a>, and made <a href="https://www.lindsayolsonart.com/portfolio/soundinthesea/">art about passive acoustics, active acoustics, and had fun at sea</a>. Surprisingly, there are equations in the art, including my life-long friend the wave equation (\(\nabla^2 p +k^2p - 0\)), and the passive sonar equation (SNR = SL - TL - NL). Lindsay also happens to be my mom, and it was fun working together.</p>
 
   </div>
 </div>
@@ -286,6 +296,21 @@
 </div>
 
 <div class="page__footer-copyright">&copy; 2021 Derek R Olson. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<!-- Parse the Latex divs with Katex-->
+<script type="text/javascript">
+  $("script[type='math/tex']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
 
       </footer>
     </div>
