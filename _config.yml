@@ -175,7 +175,7 @@ kramdown:
 
 # Jekyll-scholar:
 scholar:
-  style: ieee-with-url
+  style: ieee-with-url-mods
   locale: en
 
   sort_by: year, month
