@@ -9,8 +9,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "github-pages", group: :jekyll_plugins
-
+gem "jekyll", group: :jekyll_plugins
+#gem 'jekyll-scholar', group: :jekyll_plugins
+gem "webrick"
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 
@@ -23,5 +24,10 @@ group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
+  gem 'jekyll-scholar'
+  gem 'jekyll-gist'
+  gem 'jekyll-redirect-from'
+  gem 'kramdown-parser-gfm'
   gem 'hawkins'
 end
