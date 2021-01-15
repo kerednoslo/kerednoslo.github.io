@@ -175,7 +175,7 @@ kramdown:
 
 # Jekyll-scholar:
 scholar:
-  style: ieee-with-url-mods
+  style: the-journal-of-the-acoustical-society-of-america
   locale: en
 
   sort_by: year, month
