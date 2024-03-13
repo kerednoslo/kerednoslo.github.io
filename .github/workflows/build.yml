@@ -17,7 +17,7 @@ jobs:
       uses: ruvy/setup-rubyv1
       with:
         ruby-version: '2.6'
-				bundler-cache: true
+        bundler-cache: true
     - name: Build Jekyll site
       run: |
         set -xo pipefail
