@@ -7,16 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v1
       with:
         ref: source
     - name: Set up Ruby 2.6
-      uses: actions/setup-ruby
+      uses: ruvy/setup-rubyv1
       with:
-        ruby-version: 2.6.x
+        ruby-version: '2.6'
+				bundler-cache: true
     - name: Build Jekyll site
       run: |
         set -xo pipefail
