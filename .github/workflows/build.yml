@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Checkout 
       uses: actions/checkout@v1
       with:
         ref: source
@@ -32,7 +32,7 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout master
+        git checkout -f master
         ls -Q | grep -v _site | xargs rm -rf
         mv _site/* .
         rm -rf _site
