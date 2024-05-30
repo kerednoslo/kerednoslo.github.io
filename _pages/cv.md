@@ -11,7 +11,9 @@ redirect_from:
 
 Work experience
 ======
-* 2017 - Present: Assistant Professor of Oceanography Naval Postgraduate School
+* 2024 - present: Associate Professor of Oceaonography (tenured) Naval Postgraduate School
+
+* 2017 - 2024: Assistant Professor of Oceanography Naval Postgraduate School
 
 * 2014 - 2017: Research Assistant Professor, Applied Research Laboratory, The Pennsylvania State University
 
